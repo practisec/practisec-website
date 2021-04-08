@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>PractiSec</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>html{visibility: hidden; opacity: 0;}</style><!-- FOUC fix 1/2 -->
     <link href="/static/css/flexslider.css" rel="stylesheet" type="text/css">
-
     <link href="/static/css/fonts.css" rel="stylesheet" type="text/css">
     <link href="/static/css/default_style.css" rel="stylesheet" type="text/css">
     <link href="/static/css/common_form.css" rel="stylesheet" type="text/css">
@@ -478,6 +477,8 @@
 
     }); // $(document).ready 
     </script>
+
+    <style>html{visibility: visible; opacity: 1;}</style><!-- FOUC fix 2/2 -->
 
 </body>
 
