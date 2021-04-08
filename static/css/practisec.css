@@ -1,0 +1,22 @@
+.Practisec .InnerContainWrapper {
+    padding-bottom: 0;
+}
+
+.Practisec .Content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Practisec .Content > * {
+    margin: 1rem 0;
+}
+
+.Practisec .Content h3,
+.Practisec .Content h4 {
+    font-family: "bits-r";
+}
+
+.Practisec .Content h3 {
+    font-size: 2rem;
+}
