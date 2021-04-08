@@ -1,0 +1,54 @@
+.overlay2,
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 99999 !important;
+  width: 100%;
+}
+.boxclose,
+.boxclose2 {
+  position: absolute;
+  top: 5px !important;
+  right: 10px !important;
+  z-index: 999999 !important;
+}
+.boxclose i,
+.boxclose2 i {
+  color: var(--site-color-1);
+  font-size: 24px;
+}
+.box,
+.box2 {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  // color: var(--site-color-1);
+  z-index: 999999 !important;
+  width: 900px;
+  margin-left: -450px;
+  background: #f6f6f6;
+}
+
+.CloseImg {
+  float: right;
+  margin: 8px 8px 0px 0px;
+}
+.OverlayWrapper {
+  padding: 30px 30px 10px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.box h3.Title,
+.box2 h3.Title {
+  color: var(--site-color-2);
+  font-size: clamp(20px, 7vw, 35px);
+  line-height: 1.5;
+  font-family: var(--site-font-b);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

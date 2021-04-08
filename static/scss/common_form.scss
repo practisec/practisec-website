@@ -1,0 +1,129 @@
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+input,
+select,
+textarea {
+	font-family: var(--site-font-r);
+	color: #2b2b2b;
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #dedede;
+	background-color: #fff;
+	padding: 8px 15px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	height: 47px;
+}
+
+select {
+	background: url(../images/firefox-tweak.png) no-repeat #fff;
+	background-position: 97% 50%;
+	-webkit-appearance: none;
+	/*Removes default chrome and safari style*/
+	-moz-appearance: none;
+	/* height: 54px; */
+}
+
+textarea {
+	height: 90px;
+	text-align: left !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	width: 25px;
+	margin: 0 2px;
+	vertical-align: middle;
+}
+
+input[type="file"] {
+	padding: 0px;
+	border: 0px;
+	/*width: 38%;*/
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.Col1,
+.Col2,
+.Col3,
+.Col4 {
+	display: inline-block;
+	vertical-align: top;
+	width: 49.5%;
+	padding: 5px;
+	box-sizing: border-box;
+	line-height: 0px;
+}
+
+.Col1 {
+	display: block;
+	width: 99.7%;
+}
+
+.Col3 {
+	width: 32.8%;
+}
+
+.Col4 {
+	width: 24.4%;
+}
+
+/*---- input focus css-----*/
+input:focus,
+select:focus,
+textarea:focus {
+	box-shadow: 0px 0px 8px 0px #1a1919;
+}
+
+/*------ placeholder text color-----*/
+::-webkit-input-placeholder {
+	font-family: var(--site-font-r);
+	color: #2b2b2b;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	font-family: var(--site-font-r);
+	color: #2b2b2b;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	font-family: var(--site-font-r);
+	color: #2b2b2b;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+	font-family: var(--site-font-r);
+	color: #2b2b2b;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: capitalize;
+}

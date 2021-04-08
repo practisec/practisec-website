@@ -1,0 +1,96 @@
+// absolute postions
+@mixin abs-position($top: null, $left: null, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// create box
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// percent calculations
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+@mixin overlay($opacity) {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, $opacity);
+  }
+}
+
+@mixin video-overlay($opacity) {
+  position: relative;
+  &::before {
+    content: url(../images/icons/play-icon.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, $opacity);
+  }
+}
+
+.video-overlay {
+  display: block;
+  line-height: 0;
+  @include video-overlay(0.5);
+  img {
+    width: 100%;
+    // height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+:root {
+  /* common form */
+  --input-bg: #fff;
+  --input-br: #e6e6e6;
+  --input-color: var(--site-color-2);
+  --placeholder-color: var(--input-color);
+
+  /* default style*/
+
+  --default-bullet: url("../images/bullet-1.png");
+
+  --default-text-color: #444;
+  --site-font-r: "monts-r";
+  --site-font-b: "bits-r";
+  --monts-b: "monts-b";
+  --poppins-md: poppins-md;
+  --glacial-b: var(--site-font-b);
+  --amster-th: var(--site-font-b);
+  --default-color: #444;
+  --site-color-1: #20b3e8;
+  --site-color-2: #1e1b1c;
+  // --site-font-r: "monts-l";
+  // --site-font-b: "monts-b";
+
+  // --site-color-1: #114478;
+  // --site-color-2: #6d6e71;
+  // --heading-1: var(--site-color-1);
+  // --heading-2: #404040;
+}
+
+@mixin fz($size) {
+  .#{$size} {
+    font-size: var(--#{$size}) !important;
+  }
+}

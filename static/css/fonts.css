@@ -1,0 +1,54 @@
+/* CSS Document */
+/*-----fonts---*/
+/*-----fonts---*/
+@font-face {
+  font-family: "bits-r";
+  src: url("../fonts/bitsumishi-regular.woff2"), url("../fonts/bitsumishi-regular.woff");
+  font-display: swap;
+}
+.bits-r {
+  font-family: "bits-r";
+}
+
+:root {
+  --bits-r: bits-r;
+}
+
+@font-face {
+  font-family: "monts-r";
+  src: url("../fonts/mont-regular.woff2"), url("../fonts/mont-regular.woff");
+  font-display: swap;
+}
+.monts-r {
+  font-family: "monts-r";
+}
+
+:root {
+  --monts-r: monts-r;
+}
+
+@font-face {
+  font-family: "monts-b";
+  src: url("../fonts/mont-bold.woff2"), url("../fonts/mont-bold.woff");
+  font-display: swap;
+}
+.monts-b {
+  font-family: "monts-b";
+}
+
+:root {
+  --monts-b: monts-b;
+}
+
+@font-face {
+  font-family: "poppins-md";
+  src: url("../fonts/poppins-medium.woff2"), url("../fonts/poppins-medium.woff");
+  font-display: swap;
+}
+.poppins-md {
+  font-family: "poppins-md";
+}
+
+:root {
+  --poppins-md: poppins-md;
+}

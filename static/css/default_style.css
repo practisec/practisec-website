@@ -1,0 +1,609 @@
+/* CSS Document */
+/*---1. default reset css---*/
+/*---2. default font-size,font-family,font-color,line-height,bgcolor,ol,ul,blockquote,table,img,* :focus---*/
+/*---3. default anchor color, hr, BlackSepLine ---*/
+/*---4. Wrappers(containers)---*/
+/*---5. Container Fonts---*/
+/*---6. For Text Link ---*/
+/*---7. site selection color---*/
+/*---8. default UL-Li---*/
+/*---9 .EditorText default UL-OL css---*/
+/*---10. FullWidth, HideImg, ResImg, MaxWidth100---*/
+/*---11. grop ClearBoth , Table, Cell---*/
+/*---12. LeftRightFloat---*/
+/*---13. TextColor---*/
+/*---14. BgColor---*/
+/*---15. TopArrow---*/
+/*---16. FParagraph---*/
+/*---17. For Default Anchor Link Style---*/
+/*---18. loader---*/
+.video-overlay {
+  display: block;
+  line-height: 0;
+  position: relative;
+}
+.video-overlay::before {
+  content: url(../images/icons/play-icon.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.video-overlay img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+:root {
+  /* common form */
+  --input-bg: #fff;
+  --input-br: #e6e6e6;
+  --input-color: var(--site-color-2);
+  --placeholder-color: var(--input-color);
+  /* default style*/
+  --default-bullet: url("../images/bullet-1.png");
+  --default-text-color: #444;
+  --site-font-r: "monts-r";
+  --site-font-b: "bits-r";
+  --monts-b: "monts-b";
+  --poppins-md: poppins-md;
+  --glacial-b: var(--site-font-b);
+  --amster-th: var(--site-font-b);
+  --default-color: #444;
+  --site-color-1: #20b3e8;
+  --site-color-2: #1e1b1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*---1. default reset css---*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/*---2. default font-size,font-family,font-color,line-height,bgcolor,ol,ul,blockquote,table,img,* :focus---*/
+body {
+  background: #fff;
+  font-family: var(--site-font-r);
+  color: var(--default-color);
+  font-size: 16px;
+  line-height: 28px;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0px;
+  max-width: 100%;
+  height: auto;
+}
+
+* :focus {
+  outline: none;
+}
+
+/*---3. default anchor color, hr, BlackSepLine ---*/
+a {
+  color: var(--site-color-1);
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--site-color-2);
+}
+
+hr {
+  border: 0px;
+}
+
+/*---4. Wrappers(containers)---*/
+.InnerContainWrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.TopMainWrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*---5. Container Fonts---*/
+.InnerContainWrapper h1 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.InnerContainWrapper h2 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.InnerContainWrapper h3 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.InnerContainWrapper h4 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.InnerContainWrapper h5 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+}
+
+.InnerContainWrapper h6 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+/*---6. For Text Link ---*/
+.TextLink1 {
+  color: #42a4bc;
+}
+
+.TextLink1 a {
+  text-decoration: none;
+  color: #42a4bc;
+}
+
+.TextLink1 a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/*---7. site selection color---*/
+::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #000;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background-color: #000;
+}
+
+/*---8. default UL-Li---*/
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  background-image: url(../images/bullet-1.png);
+  background-position: 5px 10px;
+  /*R T*/
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 1px 0px;
+  padding-left: 20px;
+}
+
+.NoBullet li {
+  background-image: none;
+  background-position: 0px;
+  /*R T*/
+  background-repeat: no-repeat;
+  margin: 0px;
+  /*T R B L*/
+  padding: 0px;
+  /*T R B L*/
+}
+
+/*---9 .EditorText default UL-OL css---*/
+.EditorText ul li {
+  background-image: url(../images/bullet-1.png);
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 1px 0px 1px 20px;
+  /*T R B L*/
+  border: 0px solid;
+  display: block;
+  text-align: left;
+}
+
+.EditorText ol li {
+  border-bottom: 0px solid #d5d5d5;
+  list-style: decimal;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 1px 0px 1px 0px;
+  border: 0px solid;
+  display: list-item;
+  text-align: left;
+}
+
+/*---10. FullWidth, HideImg, ResImg, MaxWidth100---*/
+.FullWidth {
+  float: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.HideImg,
+.ResImg {
+  display: none !important;
+}
+
+.MaxWidth100 {
+  max-width: 100%;
+}
+
+/*---11. grop ClearBoth , Table, Cell---*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ClearBoth {
+  clear: both;
+  min-height: 1px;
+}
+
+.Table {
+  display: table;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.Cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*---12. LeftRightFloat---*/
+.LeftFloat {
+  float: left;
+}
+
+.RightFloat {
+  float: right;
+}
+
+.MarginLeftRight {
+  margin: 0 auto;
+}
+
+/*---13. TextColor---*/
+.TextColor1 {
+  color: #ffffff;
+}
+
+.TextColor2 {
+  color: #666666;
+}
+
+.TextColor3 {
+  color: #000000;
+}
+
+.TextColor4 {
+  color: #333333;
+}
+
+/*---14. BgColor---*/
+.BgColor1 {
+  background-color: #ffffff;
+}
+
+.BgColor2 {
+  background-color: #000;
+}
+
+.BgColor3 {
+  background-color: #2b2b2b;
+}
+
+.BgColor4 {
+  background-color: #f6f6f6;
+}
+
+/*---15. TopArrow---*/
+.TopArrow {
+  text-align: center;
+  display: none;
+  width: 100%;
+  padding: 20px 0 0;
+}
+
+.TopArrow a {
+  color: var(--site-color-1);
+  font-size: 22px;
+  line-height: 32px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.TopArrow a:hover {
+  color: var(--site-color-1);
+}
+
+.TopArrow .fa-stack-2x {
+  font-size: 34px;
+}
+
+.TopArrow .fa-inverse {
+  color: #fff;
+}
+
+.TopArrow a:hover .fa-stack-2x {
+  color: #fff;
+}
+
+/*---16. FParagraph ---*/
+.FParagraph p {
+  margin-bottom: 15px;
+  /*  Paragraph after spacing  */
+}
+
+.FParagraph1 p {
+  margin-bottom: 20px;
+  /*  Paragraph after spacing  */
+}
+
+.FParagraph p:last-child,
+.FParagraph1 p:last-child {
+  margin-bottom: 0px;
+}
+
+.TAC {
+  text-align: center;
+  /*  For Text aling  */
+}
+
+.TAL {
+  text-align: left;
+  /*  For Text aling  */
+}
+
+.TAR {
+  text-align: right;
+  /*  For Text aling  */
+}
+
+/*---17. For Default Anchor Link Style---*/
+.Links {
+  text-decoration: underline;
+}
+
+.Links:hover {
+  text-decoration: none;
+}
+
+.LinksUL {
+  text-decoration: none;
+}
+
+.LinksUL:hover {
+  text-decoration: underline;
+}
+
+/*---18. loader---*/
+.loader {
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader #spinner {
+  box-sizing: border-box;
+  stroke: #ff0000;
+  /* Change color */
+  stroke-width: 3px;
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+  animation: line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite, rotate 1.6s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+@-webkit-keyframes line {
+  0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes line {
+  0% {
+    stroke-dasharray: 2, 85.964;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  50% {
+    stroke-dasharray: 65.973, 21.9911;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 2, 85.964;
+    stroke-dashoffset: -65.973;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,73 @@
+/** floating menu **/
+//colors
+$white: #fff;
+
+.StickyBtns {
+  position: fixed;
+  bottom: 0;
+  z-index: 109;
+  right: 0;
+  width: 100%;
+  .FillRedBorder {
+    height: 6px;
+    background-color: var(--site-color-2);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid $white;
+  }
+  .MainWrapper {
+    position: relative;
+    bottom: 6px;
+    .RightWrapper {
+      display: inline-block;
+      position: absolute;
+      bottom: -2px;
+      width: auto;
+      right: 0;
+    }
+  }
+  .FSocialIcon {
+    float: right;
+    // background-color: var(--site-color-2);
+    margin: 0 0 0 10px;
+    // padding: 6px 8px 4px;
+    border: 2px solid $white;
+    border-bottom: 0;
+    width: auto;
+    //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+  }
+  .FillRedBtn {
+    display: inline-block;
+    a {
+      display: block;
+      background-color: var(--site-color-2);
+      border: 2px solid $white;
+      border-bottom: 2px solid var(--site-color-2);
+      padding: 10px 25px 6px;
+      transition: ease-in 0.3s;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 1.5;
+      color: #ffffff;
+      font-family: var(--site-font-b);
+      &:hover {
+        background-color: $white;
+        color: var(--site-color-2);
+      }
+    }
+    .activator i {
+      vertical-align: middle;
+      margin: 3px 13px 0 0;
+      display: inline-block;
+    }
+  }
+  .RightWrapper {
+    float: right;
+  }
+}
+/*-----StickyMenu-----------*/

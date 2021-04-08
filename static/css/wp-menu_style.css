@@ -1,0 +1,510 @@
+/* CSS Document */
+/*---1. IdxHeader Bg,InnerHeader Bg---*/
+/*---2. Header Menu css---*/
+/*---3. Responsive Menu CSS---*/
+/*---4. Footer CSS ---*/
+/*---4.1 social icons---*/
+/*---4.2 FooterLinks,copy,developedby---*/
+/*---1. IdxHeader Bg,InnerHeader Bg---*/
+.IdxVideoWrap,
+.IdxHeaderBg {
+  position: relative;
+  z-index: 0;
+}
+
+.IdxHeaderBg img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.IdxHeaderBg .slides li {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.InnerHeaderBg {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 0;
+  min-height: 300px;
+  height: 300px;
+  background-size: cover;
+  display: table;
+  width: 100%;
+}
+
+.InnerHeaderBg .Wrapper {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: -17px;
+  z-index: 11;
+}
+.InnerHeaderBg .Wrapper h2.Title {
+  padding-left: 35px;
+  text-align: left;
+  font-family: "bits-r";
+  color: #fff;
+  line-height: 1;
+  font-size: clamp((90px/2.5), 5vw, 90px);
+}
+
+.Header {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 120px;
+  text-align: center;
+  z-index: 11;
+}
+
+#my-video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/*---2. Header Menu css---*/
+.ResponsiveLogo {
+  display: none;
+  line-height: 0;
+}
+
+.HomeTop {
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Logo {
+  float: left;
+  width: 192px;
+}
+
+.Logo a {
+  display: block;
+  width: 192px;
+  height: 145px;
+  background: url(../images/imgs/main-logo.png) no-repeat left top;
+  text-indent: -999999px;
+  background-size: 100%;
+}
+
+.LogoCenter {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 100;
+  width: 300px;
+}
+
+.TopMainRight {
+  float: right;
+  width: max-content;
+  text-align: right;
+  padding: 50px 0 0 0;
+}
+
+.PhoneImg {
+  color: #666666;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--site-font-b);
+  letter-spacing: 1px;
+  padding: 8px 0px;
+  box-sizing: border-box;
+}
+
+.PhoneImg i {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: 2px solid var(--site-color-1);
+  color: var(--site-color-1);
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 3px 0px 0px;
+}
+
+.PhoneImg a,
+.PhoneImg a:hover {
+  color: #333;
+}
+
+a.menu-link {
+  color: #000;
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+  margin: 15px;
+}
+
+.menu-link span {
+  height: 4px;
+  margin: 0px 0px 4px;
+  width: 30px;
+  background-color: #000;
+  display: block;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform, opacity;
+}
+
+.menu-link span:last-child {
+  margin: 0px 0px 0px;
+}
+
+.menu-link.active span:first-child {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.menu-link.active span:nth-child(2n) {
+  transform: rotate(0deg) translate3d(-25.71429px, 0px, 0);
+  opacity: 0;
+}
+
+.menu-link.active span:last-child {
+  transform: translate3d(0, -6px, 0) rotate(-45deg);
+}
+
+.menu-link:hover span {
+  border-color: #666;
+}
+
+.js .menu > ul ul.active,
+.menu.active {
+  max-height: 880px;
+}
+
+.menu > ul {
+  padding: 0;
+}
+
+.js .menu > ul ul {
+  display: inherit;
+  position: relative;
+  left: auto;
+  top: auto;
+  box-shadow: none;
+  border: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0px 20px;
+  position: relative;
+  background-image: none;
+  padding: 0;
+  line-height: 34px;
+}
+
+nav li:first-child {
+  margin-left: 0px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: var(--poppins-md);
+}
+
+span.has-subnav {
+  display: block;
+  font-size: 18px;
+  line-height: 42px;
+  position: absolute;
+  right: 10px;
+  padding: 0 0;
+  top: 0;
+  width: 30px;
+  text-align: center;
+}
+
+span.has-subnav.active {
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 1025px) {
+  .TopHeader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 0.29) 20%, rgba(0, 0, 0, 0.58) 41%, rgba(0, 0, 0, 0.74) 61%, rgba(0, 0, 0, 0.75) 100%);
+    width: 100%;
+    padding: 11px 0 5px;
+  }
+}
+@media only screen and (min-width: 1025px) and (min-width: 1025px) {
+  .TopHeader .TopMainWrapper {
+    padding-left: 30px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  a.menu-link {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .js .menu > ul li:hover > ul,
+.js .menu > ul li ul li:hover > ul {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu ul {
+    display: block;
+    vertical-align: top;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s, 0s;
+    transition-delay: 0s, 0.2s;
+    margin: 0;
+    overflow: inherit;
+    position: absolute !important;
+    top: 34px !important;
+    left: 0px !important;
+    line-height: initial;
+    text-align: left;
+    background-color: #fff;
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu ul li ul li ul {
+    top: 0px !important;
+    left: 180px !important;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu ul li ul li {
+    display: block;
+    vertical-align: top;
+    background-image: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu li ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu li ul li a:hover {
+    color: #fff;
+    background-color: var(--site-color-1);
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu span.has-subnav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu li a:hover {
+    color: var(--site-color-1);
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu li li a:hover {
+    background: rgba(164, 208, 94, 0.1);
+    color: #000;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu ul ul li a {
+    display: block;
+    padding: 8px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .TopHeader .TopMainWrapper {
+    width: 100% !important;
+  }
+
+  .PhoneImg {
+    color: #666666;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--site-font-b);
+    letter-spacing: 1px;
+    padding: 10px 0px 10px 15px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .Logo {
+    display: none;
+  }
+
+  .TopMainRight {
+    float: none;
+    width: 100%;
+  }
+
+  .menu,
+.menu > ul ul {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-outt;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    z-index: 9999;
+    top: 50px;
+    width: 100%;
+  }
+
+  .menu li {
+    border-bottom: 1px solid #d8d8d8;
+    margin: 0px 0px;
+    display: block;
+    background-color: #fff;
+  }
+
+  .menu li a {
+    padding: 10px 20px 6px;
+    border-bottom: 1px solid #d8d8d8;
+    color: var(--site-color-2);
+    text-align: left;
+    display: block;
+  }
+
+  .menu li li {
+    padding: 0px 0px;
+    border-bottom: 0px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+  }
+
+  .menu li li a {
+    padding-left: 40px;
+  }
+
+  .menu li li li a {
+    padding-left: 60px;
+  }
+
+  .menu li a,
+.menu li:last-child a {
+    border: none;
+  }
+}
+/*---4.2 FooterLinks,copy,developedby---*/
+.FooterLink li {
+  background-image: none;
+}
+
+.FooterLink li + li {
+  border-left: 1px solid #333;
+}
+
+.FooterLink li a {
+  color: #333;
+  padding: 0px 12px;
+}
+
+.FooterLink li a:hover {
+  color: #333;
+}
+
+.FooterLink li:first-child a {
+  padding-left: 0;
+}
+
+.FooterLink li:last-child a {
+  padding-right: 0;
+}
+
+.copy br {
+  display: none;
+}
+
+.DevelopedBy i {
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.DevelopedBy i img {
+  vertical-align: middle;
+}
+
+/*---4.1 social icons---*/
+.TopHeader {
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.TopHeader .TopMainRight {
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.TopHeader .Logo,
+.TopHeader .Logo a {
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.TopHeader.Sticky {
+  background: #fff;
+  padding: 5px 0 8px;
+}
+.TopHeader.Sticky .TopMainRight {
+  padding: 33px 0 0;
+}
+.TopHeader.Sticky .Logo {
+  width: 132px;
+}
+.TopHeader.Sticky .Logo a {
+  background: center/contain no-repeat url(../images/imgs/sticky-logo.png);
+  width: 132px;
+  height: 100px;
+}
+.TopHeader.Sticky .menu li a {
+  color: var(--site-color-2);
+}
+.TopHeader.Sticky .menu li a:hover {
+  color: var(--site-color-1);
+}

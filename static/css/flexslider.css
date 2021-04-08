@@ -1,0 +1,187 @@
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flexslider .slides > li:not(:first-child) {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .slides {
+  display: block;
+}
+
+* html .slides {
+  height: 1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  position: relative;
+  /*margin: 0 0 60px;
+   background: #fff;
+   border: px solid #fff;
+
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -o-border-radius: 4px;
+   border-radius: 4px;
+   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+   zoom: 1;*/
+}
+
+.flex-viewport {
+  /*max-height: 2000px;*/
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.carousel li {
+  margin-right: 5px;
+}
+
+/* Direction Nav */
+.flex-direction-nav {
+  display: none;
+}
+
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: none;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+  left: 0;
+  background: url(../images/icons/prev.png) no-repeat top center;
+}
+
+.flex-direction-nav .flex-next {
+  right: 0;
+  background: url(../images/icons/next.png) no-repeat top center;
+}
+
+/* Control Nav */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  z-index: 99;
+}
+
+.flex-control-nav li {
+  margin: 0 5px;
+  display: inline-block;
+  zoom: 1;
+}
+
+.flex-control-paging li a {
+  width: 10px;
+  height: 10px;
+  display: block;
+  cursor: pointer;
+  text-indent: -99999px;
+  line-height: 24px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.flexslider .slides .EditorText img {
+  width: auto;
+}
+
+#HomeSlider .flex-control-paging li a {
+  display: block;
+}
+
+.IdxHeaderBg .flex-control-paging li a {
+  display: block;
+}

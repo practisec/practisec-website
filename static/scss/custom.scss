@@ -1,0 +1,230 @@
+.Disnone {
+  display: none;
+}
+
+.EditorText h1 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.EditorText h2 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.EditorText #SubHeading2 h2 {
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 62px;
+}
+
+.EditorText h3 {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.EditorText #SubHeading3 h3 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 52px;
+}
+
+.EditorText h4 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.EditorText #SubHeading4 h5 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.EditorText h5 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+}
+
+.EditorText h6 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+.EditorText hr {
+  margin: 0px;
+  border-bottom: 1px solid #999;
+  height: 1px;
+  width: 100%;
+}
+
+.EditorText table {
+  max-width: 500px !important;
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+.EditorText table tr td {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 5px 15px;
+  border-left: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.AboutNew.IdxTestimonialsPatternBg {
+  background: url() no-repeat top center;
+  height: 24px;
+  position: absolute;
+  width: 100%;
+  top: -23px;
+}
+
+.EditorText li {
+  margin: 0px;
+  padding: 0px 0px 0px 20px !important;
+  background-image: url(../images/bullet-1.png) !important;
+  border-bottom: 0px solid #ddd !important;
+}
+
+.EditorText ol li {
+  display: list-item !important;
+  margin-left: 20px;
+  width: auto !important;
+  margin: 0px;
+  text-align: left;
+  cursor: text;
+  background-image: none !important;
+  padding: 0px !important;
+}
+
+.EditorText sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.EditorText sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.EditorText blockquote {
+  padding-left: 20px;
+}
+
+/* Create New Landing Page */
+.NewLandWrapper .LeftBlock {
+  width: 65%;
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 35px;
+  border-right: 2px solid #ddd;
+}
+
+.NewLandWrapper .RightBlock {
+  width: 32%;
+  /* float: right; */
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 35px;
+}
+
+.NewLandWrapper .LeftFloat {
+  float: left;
+  padding-right: 20px;
+}
+
+.IdxContainWrapper {
+  max-width: 1200px;
+  width: calc(100vw - 30px);
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+/* END Create New Landing Page */
+/*--------------Error------------*/
+.ErrorBodyWrap .InfoWrapper .Error404Title {
+  color: var(--site-color-1);
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: var(--site-font-b);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.ErrorBodyWrap .InfoWrapper .TagLine {
+  color: var(--site-color-2);
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: var(--site-font-b);
+  text-transform: inherit;
+  margin-bottom: 15px;
+}
+
+/*--------------ThankYou---MSG---CSS-----------------*/
+.LoaderWrap {
+  line-height: 0px;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.ThankYouMsg {
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ThankYouMsg {
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: var(--site-font-b);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+h2.LandingTitle {
+  color: var(--site-color-1);
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: var(--site-font-b);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+div.LandingTitle {
+  color: var(--site-color-2);
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: var(--site-font-b);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.LandingShortDesc {
+  color: var(--site-color-2);
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: var(--site-font-b);
+  text-transform: inherit;
+  margin-bottom: 10px;
+}
+
+sub {
+  vertical-align: sub !important;
+}
+
+sup {
+  vertical-align: sup !important;
+}
+
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

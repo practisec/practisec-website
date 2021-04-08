@@ -1,0 +1,24 @@
+/* CSS Document */
+/*-----fonts---*/
+
+/*-----fonts---*/
+// font-face mixin
+@mixin font-face($font-name, $path) {
+  @font-face {
+    font-family: quote($font-name);
+    // src: url($path + ".ttf");
+    src: url($path + ".woff2"), url($path + ".woff");
+    font-display: swap;
+  }
+  .#{$font-name} {
+    font-family: quote($font-name);
+  }
+  :root {
+    --#{$font-name}: #{$font-name};
+  }
+}
+
+@include font-face(bits-r, "../fonts/bitsumishi-regular");
+@include font-face(monts-r, "../fonts/mont-regular");
+@include font-face(monts-b, "../fonts/mont-bold");
+@include font-face(poppins-md, "../fonts/poppins-medium");

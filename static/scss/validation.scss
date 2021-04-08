@@ -1,0 +1,40 @@
+.error {
+	border: 1px solid #ff0000;
+}
+
+.errortext {
+	color: #ff0000;
+	font-weight: normal;
+	font-style: italic;
+}
+
+div.error {
+	display: none !important;
+}
+
+label[for="hiddenRecaptcha"],
+label[for="hiddenRecaptcha1"],
+label[for="hiddenRecaptcha2"],
+label[for="hiddenRecaptcha3"],
+label[for="hiddenRecaptcha4"] {
+	display: block !important;
+	color: #ff0000;
+	border: none;
+	font-size: 13px;
+	line-height: 8px;
+	background: none;
+}
+
+div[for="hiddenRecaptcha"],
+div[for="hiddenRecaptcha1"],
+div[for="hiddenRecaptcha2"],
+div[for="hiddenRecaptcha3"],
+div[for="hiddenRecaptcha4"] {
+	display: block !important;
+	color: #ff0000;
+	border: none;
+	font-size: 14px;
+	text-align: left;
+	background: none;
+	line-height: 22px;
+}

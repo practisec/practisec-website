@@ -1,0 +1,30 @@
+.Section_Second.second.consulting-page {
+  background: linear-gradient(to left, #f4f5f7 50%, var(--site-color-1) 50%);
+  .InnerContainWrapper {
+    padding: 70px 0;
+  }
+  .ImgWrapper:after {
+    display: none;
+  }
+}
+
+.Service_Wrapper.consulting-page {
+  .InnerContainWrapper {
+    padding: 15px 0 60px;
+  }
+  ul li .icon {
+    margin: 0 auto 10px;
+  }
+  .WithoutSlider ul li {
+    flex: 0 0 395px;
+    padding: 20px 20px 25px;
+  }
+  li > a {
+    display: block;
+    color: inherit;
+    text-align: center;
+  }
+  ul li .plus {
+    font-family: var(--site-font-r);
+  }
+}
