@@ -20,3 +20,45 @@
 .Practisec .Content h3 {
     font-size: 2rem;
 }
+
+.Practisec .Content .linebtn a {
+  color: #1e1b1c;
+  border-bottom: 6px solid var(--site-color-1);
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.Practisec .Content .linebtn a:hover {
+  border-bottom: 6px solid var(--site-color-2);
+}
+
+.CardWrap {
+    background-color: var(--site-color-1);
+}
+
+.CardWrap .InnerContainWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.CardWrap article {
+    flex: 1 0 380px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CardWrap article.dummy {
+    visibility: hidden;
+}
+
+.CardWrap article .CardTitle {
+    font-family: var(--monts-b);
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--site-color-1);
+    margin-bottom: 20px;
+}
