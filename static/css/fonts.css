@@ -15,29 +15,29 @@
 }
 
 @font-face {
-  font-family: "monts-r";
-  src: url("../fonts/mont-regular.woff2"), url("../fonts/mont-regular.woff");
+  font-family: "poppins-r";
+  src: url("../fonts/poppins-regular.woff2"), url("../fonts/poppins-regular.woff");
   font-display: swap;
 }
-.monts-r {
-  font-family: "monts-r";
+.poppins-r {
+  font-family: "poppins-r";
 }
 
 :root {
-  --monts-r: monts-r;
+  --poppins-r: poppins-r;
 }
 
 @font-face {
-  font-family: "monts-b";
-  src: url("../fonts/mont-bold.woff2"), url("../fonts/mont-bold.woff");
+  font-family: "poppins-b";
+  src: url("../fonts/poppins-bold.woff2"), url("../fonts/poppins-bold.woff");
   font-display: swap;
 }
-.monts-b {
-  font-family: "monts-b";
+.poppins-b {
+  font-family: "poppins-b";
 }
 
 :root {
-  --monts-b: monts-b;
+  --poppins-b: poppins-b;
 }
 
 @font-face {

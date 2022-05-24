@@ -925,7 +925,7 @@ h4.Title {
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
   color: var(--site-color-2);
   padding: 0 20px;
 }
@@ -1148,7 +1148,7 @@ h4.Title {
 .BlogWrap .ListWrap ul li h5.Title,
 .BlogWrap .ListWrap ul li h5.Title a {
   margin-bottom: 10px;
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
   transition: all ease-in-out 0.3s;
   font-size: 16px;
   line-height: 26px;
@@ -1583,7 +1583,7 @@ h4.Title {
   font-size: 14px;
   line-height: 1;
   color: #1e1b1c;
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
   text-align: center;
   padding: 0px 0 4px;
   text-transform: uppercase;
@@ -1743,7 +1743,7 @@ h2.Title {
   font-size: 30px;
   line-height: 42px;
   color: var(--site-color-2);
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
   text-align: center;
 }
 
@@ -1753,7 +1753,7 @@ h2.Title {
 }
 
 .Section_Second .short-desc strong {
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
 }
 
 .BlogWrap .DescWrap {
@@ -1766,7 +1766,7 @@ h2.Title {
   font-size: 12px;
   line-height: 26px;
   color: var(--site-color-1);
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
   margin-bottom: 5px;
 }
 
@@ -1837,7 +1837,7 @@ h2.Title {
   color: #fff;
   line-height: 1.2;
   margin-top: 15px;
-  font-family: var(--monts-b);
+  font-family: var(--poppins-b);
   font-size: 20px;
 }
 .testimonial-container .flex-control-paging li a {

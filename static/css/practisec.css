@@ -57,7 +57,7 @@
 }
 
 .CardWrap article .CardTitle {
-    font-family: var(--monts-b);
+    font-family: var(--poppins-b);
     font-size: 20px;
     text-transform: uppercase;
     color: var(--site-color-1);

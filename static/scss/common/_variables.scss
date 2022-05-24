@@ -71,22 +71,15 @@
   --default-bullet: url("../images/bullet-1.png");
 
   --default-text-color: #444;
-  --site-font-r: "monts-r";
+  --site-font-r: "poppins-r";
   --site-font-b: "bits-r";
-  --monts-b: "monts-b";
+  --poppins-b: "poppins-b";
   --poppins-md: poppins-md;
   --glacial-b: var(--site-font-b);
   --amster-th: var(--site-font-b);
   --default-color: #444;
   --site-color-1: #20b3e8;
   --site-color-2: #1e1b1c;
-  // --site-font-r: "monts-l";
-  // --site-font-b: "monts-b";
-
-  // --site-color-1: #114478;
-  // --site-color-2: #6d6e71;
-  // --heading-1: var(--site-color-1);
-  // --heading-2: #404040;
 }
 
 @mixin fz($size) {

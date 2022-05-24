@@ -49,9 +49,9 @@
   /* default style*/
   --default-bullet: url("../images/bullet-1.png");
   --default-text-color: #444;
-  --site-font-r: "monts-r";
+  --site-font-r: "poppins-r";
   --site-font-b: "bits-r";
-  --monts-b: "monts-b";
+  --poppins-b: "poppins-b";
   --poppins-md: poppins-md;
   --glacial-b: var(--site-font-b);
   --amster-th: var(--site-font-b);
